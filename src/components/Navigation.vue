@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex flex-row bg-slate-100">
+  <div class="flex flex-row bg-neutral-50 drop-shadow-lg">
     <div class="flex flex-row flex-auto ml-20 my-4">
       <img src="../assets/icons/logo.svg" />
     </div>
