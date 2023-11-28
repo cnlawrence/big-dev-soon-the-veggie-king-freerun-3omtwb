@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import Navigation from "./components/Navigation.vue";
 </script>
 
 <template>
-  <HelloWorld msg="Hello World" />
+  <Navigation />
   <div class="footer">
     <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
       >Project by cnlawrence</a
