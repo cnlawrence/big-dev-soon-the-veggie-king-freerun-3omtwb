@@ -15,11 +15,13 @@ onMounted(() => {
           <div class="pb-3">Healthy & Fresh</div>
           <div>Food For You</div>
         </div>
-        <div class="py-6">
-          Create for lovers of healthy, delicious, and <br />
+        <div class="text-xl py-6">
+          Created for lovers of healthy, delicious, and <br />
           non-obvious food.
         </div>
-        <button class="bg-orange-400 hover:bg-orange-300 rounded-lg py-3 px-4">
+        <button
+          class="bg-orange-400 hover:bg-orange-300 rounded-lg py-2.5 px-4"
+        >
           Check menu
           <svg
             class="inline mx-1"
