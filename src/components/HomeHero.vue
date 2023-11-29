@@ -20,7 +20,8 @@ onMounted(() => {
           Created for lovers of healthy, delicious, and <br />
           non-obvious food.
         </div>
-        <button
+        <a
+          href="#menu"
           class="bg-orange-400 hover:bg-orange-300 rounded-lg py-2.5 px-4"
         >
           Check menu
@@ -35,7 +36,7 @@ onMounted(() => {
               d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
             />
           </svg>
-        </button>
+        </a>
       </div>
       <div class="col-span-1 relative bg-[#2E7D32] h-[92.5vh]">
         <div
@@ -110,7 +111,7 @@ onMounted(() => {
       />
     </div>
     <!-- About Us Section -->
-    <div id="about-us" class="relative grid grid-cols-2 my-20 items-center">
+    <div id="about-us" class="relative grid grid-cols-2 pt-32 items-center">
       <!-- About Us Food -->
       <div class="grid">
         <svg
@@ -138,6 +139,44 @@ onMounted(() => {
           <div>overflowing with positive energy that it expresses</div>
           important to us values. Get to know them specifically.
           <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu Section -->
+    <div id="menu" class="text-center py-32">
+      <!-- Menu Heading -->
+      <div class="mb-16">
+        <div class="text-orange-400 text-2xl mb-3">Menu</div>
+        <div class="text-4xl font-semibold">Explore our best food</div>
+        <div class="text-xl mt-3">
+          Below you can see our best selling meals!
+        </div>
+      </div>
+      <!-- Menu Cards -->
+      <div class="flex flex-col-3 my-10 mx-20 gap-6 justify-center">
+        <!-- Card 1 -->
+        <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
+          <img src="../assets//images/menu-section-mighty-burger.png" alt="" />
+          <div class="my-5 ml-8 text-start">
+            <div class="text-2xl font-semibold">Mighty Burger</div>
+            <div class="mt-3">Served with fries and drink</div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
+          <img src="../assets//images/menu-section-chickpae-salad.png" alt="" />
+          <div class="my-5 ml-8 text-start">
+            <div class="text-2xl font-semibold">Chickpae's salad</div>
+            <div class="mt-3">Served with fries and drink</div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
+          <img src="../assets//images/menu-section-chickpae-wrap.png" alt="" />
+          <div class="my-5 ml-8 text-start">
+            <div class="text-2xl font-semibold">Chickpae's wrap</div>
+            <div class="mt-3">Served with fries and drink</div>
+          </div>
         </div>
       </div>
     </div>
