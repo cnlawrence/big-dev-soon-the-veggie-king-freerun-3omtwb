@@ -100,8 +100,9 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <div class="absolute">
     <img
-      class="relative bottom-28"
+        class="relative bottom-32 z-30"
       src="../assets/images/hero-section-food.png"
       alt=""
     />
