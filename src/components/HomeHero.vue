@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Carousel, initTE } from "tw-elements";
+import { onMounted } from "vue";
+
+onMounted(() => {
+  initTE({ Carousel });
+});
+</script>
 
 <template>
   <div class="relative">
@@ -28,11 +35,67 @@
         </button>
       </div>
       <div class="col-span-1 relative bg-[#2E7D32] h-[92.5vh]">
-        <img
-          class="absolute inset-52 -left-96"
-          src="../assets/images/hero-section-slide-food-1.png"
-          alt=""
-        />
+        <div
+          id="carouselExampleSlidesOnly"
+          class="relative"
+          data-te-carousel-init
+          data-te-ride="carousel"
+        >
+          <!--Carousel items-->
+          <div
+            class="relative w-full inset-52 -left-96 overflow-hidden after:clear-both after:block after:content-['']"
+          >
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+              data-te-carousel-active
+            >
+              <img
+                src="../assets/images/hero-section-slide-food-1.png"
+                class="block w-full"
+                alt="Kale Salad"
+              />
+            </div>
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img
+                src="../assets/images/hero-section-slide-food-2.png"
+                class="block w-full"
+                alt="Tofu Southwestern"
+              />
+            </div>
+            <!--Third item-->
+            <div
+              class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img
+                src="../assets/images/hero-section-slide-food-3.png"
+                class="block w-full"
+                alt="Deconstructed Avacado"
+              />
+            </div>
+            <!--Fourth item-->
+            <div
+              class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img
+                src="../assets/images/hero-section-slide-food-4.png"
+                class="block w-full"
+                alt="Poke Bowl"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <img
