@@ -6,9 +6,15 @@
       <img src="../assets/icons/logo.svg" />
     </div>
     <div class="flex flex-row gap-10 mr-32 my-6">
-      <a href="#about-us" class="font-semibold">ABOUT US</a>
-      <a href="#menu" class="font-semibold">MENU</a>
-      <a href="#contact" class="font-semibold">CONTACT</a>
+      <a href="#about-us" class="font-semibold hover:scale-105 duration-400"
+        >ABOUT US</a
+      >
+      <a href="#menu" class="font-semibold hover:scale-105 duration-400"
+        >MENU</a
+      >
+      <a href="#contact" class="font-semibold hover:scale-105 duration-400"
+        >CONTACT</a
+      >
     </div>
   </div>
 </template>

@@ -11,6 +11,7 @@ onMounted(() => {
   <div class="relative">
     <!-- Hero Section -->
     <div class="grid grid-cols-3 items-center">
+      <!-- Hero Content -->
       <div class="col-span-2 pl-28">
         <div class="text-7xl font-extrabold font-['Raleway-Black']">
           <div class="pb-3">Healthy & Fresh</div>
@@ -38,6 +39,7 @@ onMounted(() => {
           </svg>
         </a>
       </div>
+      <!-- Hero Carousel -->
       <div class="col-span-1 relative bg-[#2E7D32] h-[92.5vh]">
         <div
           id="carouselExampleSlidesOnly"
@@ -47,7 +49,7 @@ onMounted(() => {
         >
           <!--Carousel items-->
           <div
-            class="relative w-full inset-52 -left-96 overflow-hidden after:clear-both after:block after:content-['']"
+            class="relative w-full inset-52 -left-96 overflow-hidden after:clear-both after:block after:content-[''] hover:brightness-110 hover:scale-105 duration-700"
           >
             <!--First item-->
             <div
@@ -105,7 +107,7 @@ onMounted(() => {
     <!-- Transition Break Image -->
     <div class="absolute">
       <img
-        class="relative bottom-32 z-30"
+        class="relative bottom-32 z-30 hover:brightness-125 hover:scale-110 duration-700"
         src="../assets/images/hero-section-food.png"
         alt=""
       />
@@ -125,7 +127,7 @@ onMounted(() => {
           <circle cx="30.5002" cy="30.5" r="30.5" fill="#2E7D32" />
         </svg>
         <img
-          class="relative col-start-1 row-start-1 mt-24 ml-16 z-10"
+          class="relative col-start-1 row-start-1 mt-24 ml-16 z-10 hover:brightness-110 hover:scale-105 duration-700"
           src="../assets/images/about-us-section-food.png"
           alt=""
         />
@@ -155,7 +157,9 @@ onMounted(() => {
       <!-- Menu Cards -->
       <div class="flex flex-col-3 my-10 mx-20 gap-6 justify-center">
         <!-- Card 1 -->
-        <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
+        <div
+          class="shadow-2xl rounded-xl bg-gray-50 w-1/3 hover:brightness-125 hover:scale-105 duration-700"
+        >
           <img src="../assets/images/menu-section-mighty-burger.png" alt="" />
           <div class="my-5 ml-8 text-start">
             <div class="text-2xl font-semibold">Mighty Burger</div>
@@ -163,7 +167,9 @@ onMounted(() => {
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
+        <div
+          class="shadow-2xl rounded-xl bg-gray-50 w-1/3 hover:brightness-125 hover:scale-105 duration-700"
+        >
           <img src="../assets/images/menu-section-chickpae-salad.png" alt="" />
           <div class="my-5 ml-8 text-start">
             <div class="text-2xl font-semibold">Chickpae's salad</div>
@@ -171,7 +177,9 @@ onMounted(() => {
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
+        <div
+          class="shadow-2xl rounded-xl bg-gray-50 w-1/3 hover:brightness-125 hover:scale-105 duration-700"
+        >
           <img src="../assets/images/menu-section-chickpae-wrap.png" alt="" />
           <div class="my-5 ml-8 text-start">
             <div class="text-2xl font-semibold">Chickpae's wrap</div>
@@ -184,12 +192,36 @@ onMounted(() => {
     <div class="pb-32 text-center">
       <div class="text-3xl font-semibold pb-10">Good food = happy clients</div>
       <div class="grid grid-cols-3 grid-rows-2">
-        <img src="../assets//images/gallery-photo-1.png" alt="" />
-        <img src="../assets//images/gallery-photo-2.png" alt="" />
-        <img src="../assets//images/gallery-photo-3.png" alt="" />
-        <img src="../assets//images/gallery-photo-4.png" alt="" />
-        <img src="../assets//images/gallery-photo-5.png" alt="" />
-        <img src="../assets//images/gallery-photo-6.png" alt="" />
+        <img
+          class="hover:brightness-125 hover:scale-105 duration-700"
+          src="../assets//images/gallery-photo-1.png"
+          alt=""
+        />
+        <img
+          class="hover:brightness-125 hover:scale-105 duration-700"
+          src="../assets//images/gallery-photo-2.png"
+          alt=""
+        />
+        <img
+          class="hover:brightness-125 hover:scale-105 duration-700"
+          src="../assets//images/gallery-photo-3.png"
+          alt=""
+        />
+        <img
+          class="hover:brightness-125 hover:scale-105 duration-700"
+          src="../assets//images/gallery-photo-4.png"
+          alt=""
+        />
+        <img
+          class="hover:brightness-125 hover:scale-105 duration-700"
+          src="../assets//images/gallery-photo-5.png"
+          alt=""
+        />
+        <img
+          class="hover:brightness-125 hover:scale-105 duration-700"
+          src="../assets//images/gallery-photo-6.png"
+          alt=""
+        />
       </div>
     </div>
     <!-- Contact Section -->

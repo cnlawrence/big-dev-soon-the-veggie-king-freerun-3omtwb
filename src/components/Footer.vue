@@ -20,9 +20,21 @@
           <div>seasonal specials and promotions. Check our socials.</div>
         </div>
         <div class="flex flex-row gap-4 pt-6">
-          <img src="../assets/icons/twitter-icon.svg" alt="" />
-          <img src="../assets/icons/facebook-icon.svg" alt="" />
-          <img src="../assets/icons/instagram-icon.svg" alt="" />
+          <img
+            class="hover:animate-pulse"
+            src="../assets/icons/twitter-icon.svg"
+            alt=""
+          />
+          <img
+            class="hover:animate-pulse"
+            src="../assets/icons/facebook-icon.svg"
+            alt=""
+          />
+          <img
+            class="hover:animate-pulse"
+            src="../assets/icons/instagram-icon.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
