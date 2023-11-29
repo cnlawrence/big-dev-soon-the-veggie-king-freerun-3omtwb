@@ -180,6 +180,18 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <!-- Gallery Section -->
+    <div class="pb-32 text-center">
+      <div class="text-3xl font-semibold pb-10">Good food = happy clients</div>
+      <div class="grid grid-cols-3 grid-rows-2">
+        <img src="../assets//images/gallery-photo-1.png" alt="" />
+        <img src="../assets//images/gallery-photo-2.png" alt="" />
+        <img src="../assets//images/gallery-photo-3.png" alt="" />
+        <img src="../assets//images/gallery-photo-4.png" alt="" />
+        <img src="../assets//images/gallery-photo-5.png" alt="" />
+        <img src="../assets//images/gallery-photo-6.png" alt="" />
+      </div>
+    </div>
   </div>
 </template>
 
