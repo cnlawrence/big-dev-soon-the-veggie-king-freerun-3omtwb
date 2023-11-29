@@ -11,11 +11,11 @@
     src: url("./assets/fonts/Raleway-Regular.ttf") format("truetype");
   }
   @font-face {
-    font-family: "Raleway";
+    font-family: "Raleway-Medium";
     src: url("./assets/fonts/Raleway-Medium.ttf") format("truetype");
   }
   @font-face {
-    font-family: "Raleway";
+    font-family: "Raleway-SemiBold";
     src: url("./assets/fonts/Raleway-SemiBold.ttf") format("truetype");
   }
 }

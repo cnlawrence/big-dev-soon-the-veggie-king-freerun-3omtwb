@@ -6,7 +6,7 @@
       <img src="../assets/icons/logo.svg" />
     </div>
     <div class="flex flex-row gap-10 mr-32 my-6">
-      <a href="#" class="font-semibold">ABOUT US</a>
+      <a href="#about-us" class="font-semibold">ABOUT US</a>
       <a href="#" class="font-semibold">MENU</a>
       <a href="#" class="font-semibold">CONTACT</a>
     </div>

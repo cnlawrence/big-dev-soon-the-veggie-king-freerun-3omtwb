@@ -9,6 +9,7 @@ onMounted(() => {
 
 <template>
   <div class="relative">
+    <!-- Hero Section -->
     <div class="grid grid-cols-3 items-center">
       <div class="col-span-2 pl-28">
         <div class="text-7xl font-extrabold font-['Raleway-Black']">
@@ -100,12 +101,46 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <!-- Transition Break Image -->
     <div class="absolute">
-    <img
+      <img
         class="relative bottom-32 z-30"
-      src="../assets/images/hero-section-food.png"
-      alt=""
-    />
+        src="../assets/images/hero-section-food.png"
+        alt=""
+      />
+    </div>
+    <!-- About Us Section -->
+    <div id="about-us" class="relative grid grid-cols-2 my-20 items-center">
+      <!-- About Us Food -->
+      <div class="grid">
+        <svg
+          class="relative -left-56 col-start-1 row-start-1 z-0"
+          width="625"
+          height="625"
+          viewBox="0 0 61 61"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="30.5002" cy="30.5" r="30.5" fill="#2E7D32" />
+        </svg>
+        <img
+          class="relative col-start-1 row-start-1 mt-24 ml-16 z-10"
+          src="../assets/images/about-us-section-food.png"
+          alt=""
+        />
+      </div>
+      <!-- About Us Description -->
+      <div class="flex flex-col gap-4 h-full items-left justify-center">
+        <div class="text-orange-400 text-2xl">About Us</div>
+        <div class="text-4xl font-semibold">Few words about us</div>
+        <div class="text-2xl">
+          <div>We are not ordinary food truck. We create a place</div>
+          <div>overflowing with positive energy that it expresses</div>
+          important to us values. Get to know them specifically.
+          <div></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
