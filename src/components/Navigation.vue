@@ -8,7 +8,7 @@
     <div class="flex flex-row gap-10 mr-32 my-6">
       <a href="#about-us" class="font-semibold">ABOUT US</a>
       <a href="#menu" class="font-semibold">MENU</a>
-      <a href="#" class="font-semibold">CONTACT</a>
+      <a href="#contact" class="font-semibold">CONTACT</a>
     </div>
   </div>
 </template>

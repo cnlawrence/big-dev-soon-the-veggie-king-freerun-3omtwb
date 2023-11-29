@@ -156,7 +156,7 @@ onMounted(() => {
       <div class="flex flex-col-3 my-10 mx-20 gap-6 justify-center">
         <!-- Card 1 -->
         <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
-          <img src="../assets//images/menu-section-mighty-burger.png" alt="" />
+          <img src="../assets/images/menu-section-mighty-burger.png" alt="" />
           <div class="my-5 ml-8 text-start">
             <div class="text-2xl font-semibold">Mighty Burger</div>
             <div class="mt-3">Served with fries and drink</div>
@@ -164,7 +164,7 @@ onMounted(() => {
         </div>
         <!-- Card 2 -->
         <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
-          <img src="../assets//images/menu-section-chickpae-salad.png" alt="" />
+          <img src="../assets/images/menu-section-chickpae-salad.png" alt="" />
           <div class="my-5 ml-8 text-start">
             <div class="text-2xl font-semibold">Chickpae's salad</div>
             <div class="mt-3">Served with fries and drink</div>
@@ -172,7 +172,7 @@ onMounted(() => {
         </div>
         <!-- Card 3 -->
         <div class="shadow-2xl rounded-xl bg-gray-50 w-1/3">
-          <img src="../assets//images/menu-section-chickpae-wrap.png" alt="" />
+          <img src="../assets/images/menu-section-chickpae-wrap.png" alt="" />
           <div class="my-5 ml-8 text-start">
             <div class="text-2xl font-semibold">Chickpae's wrap</div>
             <div class="mt-3">Served with fries and drink</div>
@@ -190,6 +190,47 @@ onMounted(() => {
         <img src="../assets//images/gallery-photo-4.png" alt="" />
         <img src="../assets//images/gallery-photo-5.png" alt="" />
         <img src="../assets//images/gallery-photo-6.png" alt="" />
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact" class="text-center pb-32">
+      <!-- Menu Heading -->
+      <div class="mb-16">
+        <div class="text-orange-400 text-2xl mb-3">Contact</div>
+        <div class="text-4xl font-semibold">We're waiting for you!</div>
+      </div>
+      <!-- Contact Cards -->
+      <div class="flex flex-col-3 my-10 mx-96 gap-6 justify-center">
+        <!-- Card 1 -->
+        <div
+          class="flex flex-col shadow-2xl rounded-full items-center bg-zinc-100 w-1/3"
+        >
+          <img class="h-10 mt-4" src="../assets/icons/time-icon.svg" alt="" />
+          <div class="my-5 ml-8 text-center">
+            <div class="text-2xl font-semibold">Today 12 pm - 9 pm</div>
+            <div class="mt-3">Working Hours</div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="flex flex-col shadow-2xl rounded-full items-center bg-zinc-100 w-1/3"
+        >
+          <img class="h-10 mt-4" src="../assets/icons/map-icon.svg" alt="" />
+          <div class="my-5 ml-8 text-center">
+            <div class="text-2xl font-semibold">3883 Rupert St. Vancouver</div>
+            <div class="mt-3">Find Us</div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="flex flex-col shadow-2xl rounded-full items-center bg-zinc-100 w-1/3"
+        >
+          <img class="h-10 mt-4" src="../assets/icons/phone-icon.svg" alt="" />
+          <div class="my-5 ml-8 text-center">
+            <div class="text-2xl font-semibold">(604) 569-2198</div>
+            <div class="mt-3">Call to Us</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
