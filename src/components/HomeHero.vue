@@ -13,21 +13,21 @@ onMounted(() => {
     <div class="grid grid-cols-3 items-center">
       <!-- Hero Content -->
       <div class="col-span-2 pl-28">
-        <div class="text-7xl font-extrabold font-['Raleway-Black']">
+        <div class="font-['Raleway-Black'] text-7xl font-extrabold">
           <div class="pb-3">Healthy & Fresh</div>
           <div>Food For You</div>
         </div>
-        <div class="text-xl py-6">
+        <div class="py-6 text-xl">
           Created for lovers of healthy, delicious, and <br />
           non-obvious food.
         </div>
         <a
           href="#menu"
-          class="bg-orange-400 hover:bg-orange-300 rounded-lg py-2.5 px-4"
+          class="rounded-lg bg-orange-400 px-4 py-2.5 hover:bg-orange-300"
         >
           Check menu
           <svg
-            class="inline mx-1"
+            class="mx-1 inline"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -40,7 +40,7 @@ onMounted(() => {
         </a>
       </div>
       <!-- Hero Carousel -->
-      <div class="col-span-1 relative bg-[#2E7D32] h-[92.5vh]">
+      <div class="relative col-span-1 h-[92.5vh] bg-[#2E7D32]">
         <div
           id="carouselExampleSlidesOnly"
           class="relative"
@@ -49,7 +49,7 @@ onMounted(() => {
         >
           <!--Carousel items-->
           <div
-            class="relative w-full inset-52 -left-96 overflow-hidden after:clear-both after:block after:content-[''] hover:brightness-110 hover:scale-105 duration-700"
+            class="relative inset-52 -left-96 w-full overflow-hidden duration-700 after:clear-both after:block after:content-[''] hover:scale-105 hover:brightness-110"
           >
             <!--First item-->
             <div
@@ -107,17 +107,17 @@ onMounted(() => {
     <!-- Transition Break Image -->
     <div class="absolute">
       <img
-        class="relative bottom-32 z-30 hover:brightness-125 hover:scale-110 duration-700"
+        class="relative bottom-32 z-30 duration-700 hover:scale-110 hover:brightness-125"
         src="../assets/images/hero-section-food.png"
         alt=""
       />
     </div>
     <!-- About Us Section -->
-    <div id="about-us" class="relative grid grid-cols-2 pt-32 items-center">
+    <div id="about-us" class="relative grid grid-cols-2 items-center pt-32">
       <!-- About Us Food -->
       <div class="grid">
         <svg
-          class="relative -left-56 col-start-1 row-start-1 z-0"
+          class="relative -left-56 z-0 col-start-1 row-start-1"
           width="625"
           height="625"
           viewBox="0 0 61 61"
@@ -127,14 +127,14 @@ onMounted(() => {
           <circle cx="30.5002" cy="30.5" r="30.5" fill="#2E7D32" />
         </svg>
         <img
-          class="relative col-start-1 row-start-1 mt-24 ml-16 z-10 hover:brightness-110 hover:scale-105 duration-700"
+          class="relative z-10 col-start-1 row-start-1 ml-16 mt-24 duration-700 hover:scale-105 hover:brightness-110"
           src="../assets/images/about-us-section-food.png"
           alt=""
         />
       </div>
       <!-- About Us Description -->
-      <div class="flex flex-col gap-4 h-full items-left justify-center">
-        <div class="text-orange-400 text-2xl">About Us</div>
+      <div class="items-left flex h-full flex-col justify-center gap-4">
+        <div class="text-2xl text-orange-400">About Us</div>
         <div class="text-4xl font-semibold">Few words about us</div>
         <div class="text-2xl">
           <div>We are not ordinary food truck. We create a place</div>
@@ -145,20 +145,20 @@ onMounted(() => {
       </div>
     </div>
     <!-- Menu Section -->
-    <div id="menu" class="text-center py-32">
+    <div id="menu" class="py-32 text-center">
       <!-- Menu Heading -->
       <div class="mb-16">
-        <div class="text-orange-400 text-2xl mb-3">Menu</div>
+        <div class="mb-3 text-2xl text-orange-400">Menu</div>
         <div class="text-4xl font-semibold">Explore our best food</div>
-        <div class="text-xl mt-3">
+        <div class="mt-3 text-xl">
           Below you can see our best selling meals!
         </div>
       </div>
       <!-- Menu Cards -->
-      <div class="flex flex-col-3 my-10 mx-20 gap-6 justify-center">
+      <div class="flex-col-3 mx-20 my-10 flex justify-center gap-6">
         <!-- Card 1 -->
         <div
-          class="shadow-2xl rounded-xl bg-gray-50 w-1/3 hover:brightness-125 hover:scale-105 duration-700"
+          class="w-1/3 rounded-xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
         >
           <img src="../assets/images/menu-section-mighty-burger.png" alt="" />
           <div class="my-5 ml-8 text-start">
@@ -168,7 +168,7 @@ onMounted(() => {
         </div>
         <!-- Card 2 -->
         <div
-          class="shadow-2xl rounded-xl bg-gray-50 w-1/3 hover:brightness-125 hover:scale-105 duration-700"
+          class="w-1/3 rounded-xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
         >
           <img src="../assets/images/menu-section-chickpae-salad.png" alt="" />
           <div class="my-5 ml-8 text-start">
@@ -178,7 +178,7 @@ onMounted(() => {
         </div>
         <!-- Card 3 -->
         <div
-          class="shadow-2xl rounded-xl bg-gray-50 w-1/3 hover:brightness-125 hover:scale-105 duration-700"
+          class="w-1/3 rounded-xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
         >
           <img src="../assets/images/menu-section-chickpae-wrap.png" alt="" />
           <div class="my-5 ml-8 text-start">
@@ -190,54 +190,54 @@ onMounted(() => {
     </div>
     <!-- Gallery Section -->
     <div class="pb-32 text-center">
-      <div class="text-3xl font-semibold pb-10">Good food = happy clients</div>
+      <div class="pb-10 text-3xl font-semibold">Good food = happy clients</div>
       <div class="grid grid-cols-3 grid-rows-2">
         <img
-          class="hover:brightness-125 hover:scale-105 duration-700"
+          class="duration-700 hover:scale-105 hover:brightness-125"
           src="../assets//images/gallery-photo-1.png"
           alt=""
         />
         <img
-          class="hover:brightness-125 hover:scale-105 duration-700"
+          class="duration-700 hover:scale-105 hover:brightness-125"
           src="../assets//images/gallery-photo-2.png"
           alt=""
         />
         <img
-          class="hover:brightness-125 hover:scale-105 duration-700"
+          class="duration-700 hover:scale-105 hover:brightness-125"
           src="../assets//images/gallery-photo-3.png"
           alt=""
         />
         <img
-          class="hover:brightness-125 hover:scale-105 duration-700"
+          class="duration-700 hover:scale-105 hover:brightness-125"
           src="../assets//images/gallery-photo-4.png"
           alt=""
         />
         <img
-          class="hover:brightness-125 hover:scale-105 duration-700"
+          class="duration-700 hover:scale-105 hover:brightness-125"
           src="../assets//images/gallery-photo-5.png"
           alt=""
         />
         <img
-          class="hover:brightness-125 hover:scale-105 duration-700"
+          class="duration-700 hover:scale-105 hover:brightness-125"
           src="../assets//images/gallery-photo-6.png"
           alt=""
         />
       </div>
     </div>
     <!-- Contact Section -->
-    <div id="contact" class="text-center pb-32">
+    <div id="contact" class="pb-32 text-center">
       <!-- Menu Heading -->
       <div class="mb-16">
-        <div class="text-orange-400 text-2xl mb-3">Contact</div>
+        <div class="mb-3 text-2xl text-orange-400">Contact</div>
         <div class="text-4xl font-semibold">We're waiting for you!</div>
       </div>
       <!-- Contact Cards -->
-      <div class="flex flex-col-3 my-10 mx-96 gap-6 justify-center">
+      <div class="flex-col-3 mx-96 my-10 flex justify-center gap-6">
         <!-- Card 1 -->
         <div
-          class="flex flex-col shadow-2xl rounded-full items-center bg-zinc-100 w-1/3"
+          class="flex w-1/3 flex-col items-center rounded-full bg-zinc-100 shadow-2xl"
         >
-          <img class="h-10 mt-4" src="../assets/icons/time-icon.svg" alt="" />
+          <img class="mt-4 h-10" src="../assets/icons/time-icon.svg" alt="" />
           <div class="my-5 ml-8 text-center">
             <div class="text-2xl font-semibold">Today 12 pm - 9 pm</div>
             <div class="mt-3">Working Hours</div>
@@ -245,9 +245,9 @@ onMounted(() => {
         </div>
         <!-- Card 2 -->
         <div
-          class="flex flex-col shadow-2xl rounded-full items-center bg-zinc-100 w-1/3"
+          class="flex w-1/3 flex-col items-center rounded-full bg-zinc-100 shadow-2xl"
         >
-          <img class="h-10 mt-4" src="../assets/icons/map-icon.svg" alt="" />
+          <img class="mt-4 h-10" src="../assets/icons/map-icon.svg" alt="" />
           <div class="my-5 ml-8 text-center">
             <div class="text-2xl font-semibold">3883 Rupert St. Vancouver</div>
             <div class="mt-3">Find Us</div>
@@ -255,9 +255,9 @@ onMounted(() => {
         </div>
         <!-- Card 3 -->
         <div
-          class="flex flex-col shadow-2xl rounded-full items-center bg-zinc-100 w-1/3"
+          class="flex w-1/3 flex-col items-center rounded-full bg-zinc-100 shadow-2xl"
         >
-          <img class="h-10 mt-4" src="../assets/icons/phone-icon.svg" alt="" />
+          <img class="mt-4 h-10" src="../assets/icons/phone-icon.svg" alt="" />
           <div class="my-5 ml-8 text-center">
             <div class="text-2xl font-semibold">(604) 569-2198</div>
             <div class="mt-3">Call to Us</div>
