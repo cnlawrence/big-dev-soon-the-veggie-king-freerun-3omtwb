@@ -1,14 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+
+const isOpen = ref(false);
+</script>
 
 <template>
-  <div class="flex flex-row bg-neutral-50 drop-shadow-lg">
-    <div class="my-4 ml-20 flex flex-auto flex-row">
+  <div class="flex max-h-[72px] flex-row bg-neutral-50 md:drop-shadow-2xl">
+    <!-- Logo -->
+    <div class="my-4 ml-20 flex flex-auto shrink-0 flex-row">
       <img src="../assets/icons/logo.svg" />
     </div>
-    <div class="flex pr-4 lg:hidden">
-      <img src="../assets/icons/menu-icon.svg" alt="" />
-    </div>
-    <div class="my-6 mr-32 hidden flex-row gap-10 lg:flex">
+    <!-- Nav Links -->
+    <div class="my-6 mr-32 hidden gap-10 md:flex">
       <a href="#about-us" class="duration-400 font-semibold hover:scale-105"
         >ABOUT US</a
       >
@@ -19,6 +22,43 @@
         >CONTACT</a
       >
     </div>
+    <!-- Mobile Nav Control -->
+    <div class="flex shrink-0 pr-4 md:hidden" @click="isOpen = !isOpen">
+      <img
+        :class="{ hidden: isOpen }"
+        src="../assets/icons/menu-icon.svg"
+        alt=""
+      />
+      <img
+        :class="{ hidden: !isOpen }"
+        src="../assets/icons/close-menu-icon.svg"
+        alt=""
+      />
+    </div>
+  </div>
+  <!-- Mobile Nav -->
+  <div
+    id="mobile-menu"
+    class="absolute z-50 w-full bg-neutral-50 text-center drop-shadow-2xl md:hidden"
+    :class="{ hidden: !isOpen }"
+  >
+    <ul class="bg-white p-8">
+      <li class="py-6">
+        <a href="#about-us" class="duration-400 font-semibold hover:scale-105"
+          >ABOUT US</a
+        >
+      </li>
+      <li class="py-6">
+        <a href="#menu" class="duration-400 font-semibold hover:scale-105"
+          >MENU</a
+        >
+      </li>
+      <li class="py-6">
+        <a href="#contact" class="duration-400 font-semibold hover:scale-105"
+          >CONTACT</a
+        >
+      </li>
+    </ul>
   </div>
 </template>
 
