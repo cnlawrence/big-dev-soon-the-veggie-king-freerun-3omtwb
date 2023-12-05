@@ -8,48 +8,41 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative">
+  <div class="grid grid-flow-row">
     <!-- Hero Section -->
-    <div class="grid grid-cols-3 items-center">
+    <div class="relative flex flex-row pl-4 md:pl-10 lg:items-center lg:pl-20">
       <!-- Hero Content -->
-      <div class="col-span-2 pl-28">
-        <div class="font-['Raleway-Black'] text-7xl font-extrabold">
+      <div class="basis-auto pr-8 pt-32 sm:basis-10/12 sm:px-2 sm:pr-0 lg:pt-0">
+        <div
+          class="font-['Raleway-Black'] text-3xl font-extrabold sm:text-6xl lg:text-7xl"
+        >
           <div class="pb-3">Healthy & Fresh</div>
           <div>Food For You</div>
         </div>
-        <div class="py-6 text-xl">
-          Created for lovers of healthy, delicious, and <br />
-          non-obvious food.
+        <div class="w-3/4 py-6 sm:text-xl">
+          Created for lovers of healthy, delicious, and non-obvious food.
         </div>
         <a
           href="#menu"
-          class="rounded-lg bg-orange-400 px-4 py-2.5 hover:bg-orange-300"
+          class="inline-flex gap-2 rounded-lg bg-orange-400 px-5 py-2.5 hover:bg-orange-300"
         >
-          Check menu
-          <svg
-            class="mx-1 inline"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
-            />
-          </svg>
+          <div>Check menu</div>
+          <img class="w-5" src="../assets/icons/check-menu-icon.svg" alt="" />
         </a>
       </div>
       <!-- Hero Carousel -->
-      <div class="relative col-span-1 h-[92.5vh] bg-[#2E7D32]">
+      <div
+        class="relative h-[67vh] w-full basis-3/12 bg-[#2E7D32] sm:basis-5/12 lg:h-[85vh] lg:basis-3/12"
+      >
         <div
           id="carouselExampleSlidesOnly"
-          class="relative"
+          class="absolute inset-0 right-0 w-[40vh] -translate-x-[25%] translate-y-[10%] sm:w-[60vh] sm:-translate-x-[17%] lg:-translate-x-[65%]"
           data-te-carousel-init
           data-te-ride="carousel"
         >
           <!--Carousel items-->
           <div
-            class="relative inset-52 -left-96 w-full overflow-hidden duration-700 after:clear-both after:block after:content-[''] hover:scale-105 hover:brightness-110"
+            class="relative overflow-hidden duration-700 after:clear-both after:block after:content-[''] hover:scale-105 hover:brightness-110"
           >
             <!--First item-->
             <div
@@ -103,23 +96,22 @@ onMounted(() => {
           </div>
         </div>
       </div>
+      <!-- Transition Break Image -->
+      <div class="absolute bottom-0 left-0 basis-0 translate-y-[50%]">
+        <img
+          class="z-30 duration-700 hover:scale-110 hover:brightness-125"
+          src="../assets/images/hero-section-food.png"
+          alt=""
+        />
+      </div>
     </div>
-    <!-- Transition Break Image -->
-    <div class="absolute">
-      <img
-        class="relative bottom-32 z-30 duration-700 hover:scale-110 hover:brightness-125"
-        src="../assets/images/hero-section-food.png"
-        alt=""
-      />
-    </div>
+
     <!-- About Us Section -->
-    <div id="about-us" class="relative grid grid-cols-2 items-center pt-32">
+    <div id="about-us" class="relative my-32 flex items-center">
       <!-- About Us Food -->
-      <div class="grid">
+      <div class="min-h-full md:basis-[47%]">
         <svg
-          class="relative -left-56 z-0 col-start-1 row-start-1"
-          width="625"
-          height="625"
+          class="absolute right-0 z-0 min-w-[550px] max-w-[35%] translate-x-[80%] translate-y-[30%] md:left-0 md:-translate-x-[60%] md:-translate-y-0 xl:-translate-x-[40%]"
           viewBox="0 0 61 61"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -127,16 +119,18 @@ onMounted(() => {
           <circle cx="30.5002" cy="30.5" r="30.5" fill="#2E7D32" />
         </svg>
         <img
-          class="relative z-10 col-start-1 row-start-1 ml-16 mt-24 duration-700 hover:scale-105 hover:brightness-110"
+          class="absolute right-0 z-10 min-w-[300px] max-w-[25%] translate-x-[40%] translate-y-[100%] duration-700 hover:scale-105 hover:brightness-110 md:left-0 md:min-w-[375px] md:-translate-x-[23%] md:translate-y-[25%] xl:translate-x-[18%]"
           src="../assets/images/about-us-section-food.png"
           alt=""
         />
       </div>
       <!-- About Us Description -->
-      <div class="items-left flex h-full flex-col justify-center gap-4">
-        <div class="text-2xl text-orange-400">About Us</div>
-        <div class="text-4xl font-semibold">Few words about us</div>
-        <div class="text-2xl">
+      <div class="items-left mx-4 my-[10%] h-full justify-center gap-4">
+        <div class="py-2 text-xl text-orange-400 sm:text-2xl">About Us</div>
+        <div class="py-2 text-2xl font-semibold sm:text-4xl">
+          Few words about us
+        </div>
+        <div class="py-2 text-lg sm:text-2xl">
           <div>We are not ordinary food truck. We create a place</div>
           <div>overflowing with positive energy that it expresses</div>
           important to us values. Get to know them specifically.
@@ -148,41 +142,47 @@ onMounted(() => {
     <div id="menu" class="py-32 text-center">
       <!-- Menu Heading -->
       <div class="mb-16">
-        <div class="mb-3 text-2xl text-orange-400">Menu</div>
-        <div class="text-4xl font-semibold">Explore our best food</div>
-        <div class="mt-3 text-xl">
+        <div class="mb-3 text-lg text-orange-400 sm:text-2xl">Menu</div>
+        <div class="text-xl font-semibold sm:text-4xl">
+          Explore our best food
+        </div>
+        <div class="mt-3 sm:text-xl">
           Below you can see our best selling meals!
         </div>
       </div>
       <!-- Menu Cards -->
-      <div class="flex-col-3 mx-20 my-10 flex justify-center gap-6">
+      <div
+        class="mx-auto my-10 grid grid-cols-1 justify-center gap-6 sm:mx-10 md:grid-cols-3 md:gap-3 lg:mx-20"
+      >
         <!-- Card 1 -->
         <div
-          class="w-1/3 rounded-xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
+          class="mx-2 rounded-2xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
         >
           <img src="../assets/images/menu-section-mighty-burger.png" alt="" />
-          <div class="my-5 ml-8 text-start">
-            <div class="text-2xl font-semibold">Mighty Burger</div>
+          <div class="mx-4 my-5 text-start">
+            <div class="text-xl font-semibold sm:text-2xl">Mighty Burger</div>
             <div class="mt-3">Served with fries and drink</div>
           </div>
         </div>
         <!-- Card 2 -->
         <div
-          class="w-1/3 rounded-xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
+          class="mx-2 rounded-2xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
         >
           <img src="../assets/images/menu-section-chickpae-salad.png" alt="" />
-          <div class="my-5 ml-8 text-start">
-            <div class="text-2xl font-semibold">Chickpae's salad</div>
+          <div class="mx-4 my-5 text-start">
+            <div class="text-xl font-semibold sm:text-2xl">
+              Chickpae's salad
+            </div>
             <div class="mt-3">Served with fries and drink</div>
           </div>
         </div>
         <!-- Card 3 -->
         <div
-          class="w-1/3 rounded-xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
+          class="mx-2 rounded-2xl bg-gray-50 shadow-2xl duration-700 hover:scale-105 hover:brightness-125"
         >
           <img src="../assets/images/menu-section-chickpae-wrap.png" alt="" />
-          <div class="my-5 ml-8 text-start">
-            <div class="text-2xl font-semibold">Chickpae's wrap</div>
+          <div class="mx-4 my-5 text-start">
+            <div class="text-xl font-semibold sm:text-2xl">Chickpae's wrap</div>
             <div class="mt-3">Served with fries and drink</div>
           </div>
         </div>
@@ -190,8 +190,10 @@ onMounted(() => {
     </div>
     <!-- Gallery Section -->
     <div class="pb-32 text-center">
-      <div class="pb-10 text-3xl font-semibold">Good food = happy clients</div>
-      <div class="grid grid-cols-3 grid-rows-2">
+      <div class="pb-10 text-xl font-semibold sm:text-3xl">
+        Good food = happy clients
+      </div>
+      <div class="grid grid-rows-2 sm:grid-cols-3">
         <img
           class="duration-700 hover:scale-105 hover:brightness-125"
           src="../assets//images/gallery-photo-1.png"
@@ -225,41 +227,61 @@ onMounted(() => {
       </div>
     </div>
     <!-- Contact Section -->
-    <div id="contact" class="pb-32 text-center">
+    <div id="contact" class="mx-auto bg-white px-1 pb-48 pt-16 sm:px-6 lg:px-8">
       <!-- Menu Heading -->
-      <div class="mb-16">
-        <div class="mb-3 text-2xl text-orange-400">Contact</div>
-        <div class="text-4xl font-semibold">We're waiting for you!</div>
+      <div class="mb-16 text-center">
+        <div
+          class="mb-3 text-lg text-orange-400 sm:text-2xl sm:leading-tight sm:tracking-tight"
+        >
+          Contact Us
+        </div>
+        <div class="mt-4 text-xl font-semibold sm:text-4xl">
+          We're waiting for you!
+        </div>
       </div>
       <!-- Contact Cards -->
-      <div class="flex-col-3 mx-96 my-10 flex justify-center gap-6">
+      <div
+        class="mx-auto grid gap-8 sm:px-6 lg:grid-cols-2 lg:px-8 xl:grid-cols-3"
+      >
         <!-- Card 1 -->
-        <div
-          class="flex w-1/3 flex-col items-center rounded-full bg-zinc-100 shadow-2xl"
-        >
-          <img class="mt-4 h-10" src="../assets/icons/time-icon.svg" alt="" />
-          <div class="my-5 ml-8 text-center">
-            <div class="text-2xl font-semibold">Today 12 pm - 9 pm</div>
+        <div class="rounded-full border bg-zinc-100 shadow-2xl">
+          <img
+            class="mx-auto mt-4 h-10"
+            src="../assets/icons/time-icon.svg"
+            alt=""
+          />
+          <div class="mx-4 my-5 text-center">
+            <div class="text-xl font-semibold sm:text-2xl">
+              Today 12 pm - 9 pm
+            </div>
             <div class="mt-3">Working Hours</div>
           </div>
         </div>
         <!-- Card 2 -->
-        <div
-          class="flex w-1/3 flex-col items-center rounded-full bg-zinc-100 shadow-2xl"
-        >
-          <img class="mt-4 h-10" src="../assets/icons/map-icon.svg" alt="" />
-          <div class="my-5 ml-8 text-center">
-            <div class="text-2xl font-semibold">3883 Rupert St. Vancouver</div>
+        <div class="rounded-full border bg-zinc-100 shadow-2xl">
+          <img
+            class="mx-auto mt-4 h-10"
+            src="../assets/icons/map-icon.svg"
+            alt=""
+          />
+          <div class="mx-4 my-5 text-center">
+            <div class="text-xl font-semibold sm:text-2xl">
+              3883 Rupert St. Vancouver
+            </div>
             <div class="mt-3">Find Us</div>
           </div>
         </div>
         <!-- Card 3 -->
         <div
-          class="flex w-1/3 flex-col items-center rounded-full bg-zinc-100 shadow-2xl"
+          class="rounded-full border bg-zinc-100 shadow-2xl md:col-span-2 md:mx-auto md:w-1/2 xl:col-span-1 xl:mx-0 xl:w-full"
         >
-          <img class="mt-4 h-10" src="../assets/icons/phone-icon.svg" alt="" />
-          <div class="my-5 ml-8 text-center">
-            <div class="text-2xl font-semibold">(604) 569-2198</div>
+          <img
+            class="mx-auto mt-4 h-10"
+            src="../assets/icons/phone-icon.svg"
+            alt=""
+          />
+          <div class="mx-4 my-5 text-center">
+            <div class="text-xl font-semibold sm:text-2xl">(604) 569-2198</div>
             <div class="mt-3">Call to Us</div>
           </div>
         </div>

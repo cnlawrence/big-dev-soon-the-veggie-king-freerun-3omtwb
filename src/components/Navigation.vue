@@ -5,9 +5,9 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <div class="flex max-h-[72px] flex-row bg-neutral-50 md:drop-shadow-2xl">
+  <div class="flex max-h-[72px] flex-row bg-neutral-50 drop-shadow-2xl">
     <!-- Logo -->
-    <div class="my-4 ml-20 flex flex-auto shrink-0 flex-row">
+    <div class="my-4 ml-4 flex flex-auto shrink-0 flex-row md:ml-10 lg:ml-20">
       <img src="../assets/icons/logo.svg" />
     </div>
     <!-- Nav Links -->
@@ -23,7 +23,7 @@ const isOpen = ref(false);
       >
     </div>
     <!-- Mobile Nav Control -->
-    <div class="flex shrink-0 pr-4 md:hidden" @click="isOpen = !isOpen">
+    <div class="flex pr-4 md:hidden" @click="isOpen = !isOpen">
       <img
         :class="{ hidden: isOpen }"
         src="../assets/icons/menu-icon.svg"
